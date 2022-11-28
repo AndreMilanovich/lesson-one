@@ -1,25 +1,20 @@
-"use strict";
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-// alert('Close the window please!')
+const personalMuvieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    generes: [],
+    privat: false
+};
 
-// const result = confirm('A you here?')
+const answerOne = prompt('Один из последних просмотренных фильмов?', ''),
+      answerTwo = prompt('На сколько оцените его?', ''),
+      answerThird = prompt('Один из последних просмотренных фильмов?', ''),
+      answerFour = prompt('На сколько оцените его?', '');
 
-// console.log(result);
+personalMuvieDB.movies[answerOne] = answerTwo;
+personalMuvieDB.movies[answerThird] = answerFour;
 
-// const answer = prompt("Your age 18?", "15");
-// console.log(answer +10);
-// const answers = [];
+console.log(personalMuvieDB);
 
-// answers[0] = prompt('Как ваше имя?', '');
-// answers[1] = prompt('Сколько вам лет?', '');
-// answers[2] = prompt('как дела?', '');
-
-// document.write(answers);
-
-const category = 'toys';
-
-console.log(`https://sunurl.com/${category}`);
-
-const user = "Andrey";
-
-alert(`Привет ${user}`);
